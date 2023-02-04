@@ -4,14 +4,14 @@ This repository contains diagrams and more information about the solution
 
 ## Architecture  
 The Solution has 3 main modules:   
-- The External Services (Aphluentia Mobile App, What a Nice Gesture, Mobihealth etc):   
+- The External Services Module (Aphluentia Mobile App, What a Nice Gesture, Mobihealth etc):   
     - These services can connect directly to the database to retrieve the necessary information  
     - These services need to communicate with the WebPlatform to notify of changes, pairing operations and heartbeat  
 
-- The Aphluentia Platform Services (the to-be-developed web platform):     
+- The Aphluentia Platform Module (the to-be-developed web platform):     
     - Can connect directly to the database's CRUD methods  
-    - Needs to communicate with the External Services to notify of changes, pairing operations and heartbeat  
-    - Must be responsive to changes in the External Services
+    - Needs to communicate with the External Modules to notify of changes, pairing operations and heartbeat  
+    - Must be responsive to changes in the External Modules
 
 - The Database System (Solution's Database):   
     - A REST API which allows for CRUD Operations over the database  
