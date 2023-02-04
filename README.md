@@ -45,4 +45,38 @@ Furthermore, some services have to be developed to allow for the communicate bet
     - Allows for the notification of each service when a change has taken place    
 - CommunicationAPI:    
     - External REST API which offers a standardized way of each service to connect to the Broker   
-    - Sends to the broker change notifications, heartbeat requests and responses and pairing operation details  
+    - Sends to the broker change notifications, heartbeat requests and responses and pairing operation details
+
+
+
+## Technology  
+Some aspects where considered when taking into consideration the choice of technologies. These included the overall objective of the services 
+(complexity), performance, previous experiences and useful libraries. It is also important that docker containerization will be used to
+ensure cross-platform compatibility with each module  
+
+![Architecture](diagrams/tech/tech.png)
+
+
+- Broker: Apache Kafka  
+    - Apache Kafka Broker is a well-known broker with a lot of documentation online   
+    - Previous Experience  
+
+- CommunicationAPI: FastAPI:     
+    - This is a somewhat small module, FastAPI is a lightweight python framework to build RestAPIs   
+    - FastAPI also has buil-in automatic swagger documentation   
+    - FastAPI was developed to handle multiple concurrent request efficiently   
+    - Previous Experience    
+
+- Aphluentia++ Container: .NET Core Web App MVC:    
+    - Libraries exist to update frontend and connect to broker     
+    - Partial Pages updates   
+    - Previous Experience   
+
+- DatabaseAPI Container:    
+    - .NET Core Web API has bult-in automatic swagger documentation    
+    - Entity Framework Library is great to interact with database   
+    - Previous Experience  
+
+- Database Container: mySQL:   
+    - Relational Database   
+    - Previous Experience   
