@@ -6,6 +6,7 @@ This repository contains diagrams and more information about the solution
 ## Branch Schema  
 **Each change to the repositories must be assigned with the corresponding issue or commit ID**   
 
+Issue Labels:  
 Issue Labels | Objective  
 ------------- | -------------  
 bug | Correct identified bugs   
@@ -14,7 +15,7 @@ feature | Add a New feature
 documentation | Add documentation   
   
 
-The Solution has 3 main modules:    
+Branch Naming Schema :  
 Branch Prefix | Branch Suffix  
 ------------- | -------------  
 bug  | /{IssueName}#{IssueId}   
