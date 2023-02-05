@@ -77,6 +77,16 @@ ensure cross-platform compatibility with each module
     - Entity Framework Library is great to interact with database   
     - Previous Experience  
 
-- Database Container: mySQL:   
-    - Relational Database   
-    - Previous Experience   
+- Database Container: mySQL:    
+    - Relational Database    
+    - Previous Experience    
+
+In sum, the project can be subdivided into 3 main modules:    
+- Communication Module:   
+    - Contains the Broker and the Broker Producer API that connects with it   
+- Platform Module:   
+    - Contains the Aphluentia++ Web App   
+- Database Module
+    - Contains the Project Database and the API that performs CRUD operations  
+    
+![Modules](diagrams/modules/modules.png)
