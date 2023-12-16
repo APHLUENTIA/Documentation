@@ -1,7 +1,7 @@
 # Script.ps1
 
 # Change to the directory containing the docker-compose file
-cd .\Broker\
+cd .\KafkaCluster\
 
 Write-Output "Initializing KafkaCluster..."
 # Run docker-compose
